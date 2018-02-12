@@ -1,0 +1,38 @@
+var mySoundD;
+var mySoundW;
+var mySoundF;
+
+function preload() {
+  mySoundD = loadSound('assets/doorbell.mp3');
+  mySoundW = loadSound('/water.mp3');
+  mySoundF = loadSound('/fire.mp3');
+}
+
+function setup() { 
+  mySoundD.setVolume(0.1);
+  mySoundD.play();
+  createCanvas(100, 100);
+}
+
+function draw() {
+  if (mySoundD.isPlaying()) {
+    background(125,125,0);
+  } else if (mySoundW.isPlaying()) {
+    background(0,10,200);
+  } else if (mySoundF.isPlaying()) {
+    background(215,0,0);
+  } else {
+    background(120);
+  }
+}
+
+function keyPressed() {
+  print(key);
+  if (key=='D') {
+  mySoundD.play();
+  } else if (key=='W') {
+    mySoundW.play();
+  } else if (key=='F') {
+    mySoundF.play();
+  }
+}
