@@ -1,0 +1,39 @@
+001 - WHAT IS AN OBJECT?
+      An object is a container for variables, it has data inside of it. It helps organize the code, and create a standard syntax.
+
+
+
+002 - HOW DO YOU ACCESS A PROPERTY OF AN OBJECT?
+      By using the syntax "nameOfVar.property", for example:
+      If you have an object like this:
+
+        var circle={
+          x:0,
+          y:0,
+          diameter:50
+          };
+      and you want to access the properties inside that object, you would write:
+
+        ellipse(circle.x, circle.y, circle.diameter, circle.diameter);
+   
+
+
+003 - WHAT IS THE INDEX OF THE FIRST ITEM IN AN ARRAY?
+      The index of the first item in an array is 0 (zero).
+
+
+
+004 - WHAT SYNTAX CAN YOU USE TO GET THE THIRD ITEM IN AN ARRAY?
+      arrayName[2],
+
+
+
+005 - HOW DO YOU USE A VARIABLE NAD A LOOP TO GET EVERY ITEM IN AN ARRAY?
+      By using a for loop, like this:
+      
+        var nums = [25,50,75,100];
+        
+        for (var i=0; i<4; i++) {
+          ellipse(10,200,nums[i],nums[i]);
+        }
+
